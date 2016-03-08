@@ -21,6 +21,11 @@
                 controller: 'NewsCtr',
                 jsCtr: 'js/news.js'
             },
+            'my': {
+                templateUrl: 'template/tab-my.html',
+                controller: 'MyCtr',
+                jsCtr: 'js/my.js'
+            },
             'defaults': 'index' //默认路由
         }
     });
