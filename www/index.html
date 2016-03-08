@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/aui.css">
+</head>
+<body>
+<script src="lib/spaCode.js"></script>
+<script src="lib/app.js"></script>
+<script src="js/public.js"></script>
+<header class="aui-bar aui-bar-nav aui-bar-primary" >
+    <!--<a class="aui-btn aui-btn-primary aui-pull-left" ng-click="go('list')">
+        <span class="aui-iconfont aui-icon-left"></span>
+    </a>-->
+    <div class="aui-title">标题</div>
+</header>
+<div id="ui-view" style="width:100%;position: absolute;top:45px;bottom:55px;overflow-y: scroll;/* winphone8和android4+ */ -webkit-overflow-scrolling: touch;
+"></div>
+<footer class="aui-nav">
+    <ul class="aui-bar-tab">
+        <li class="active-primary" onclick="changeToState('index',{},this)">
+            <span class="aui-iconfont aui-icon-home"></span>
+            <p >主页</p>
+        </li>
+        <li onclick="changeToState('circle',{},this)">
+            <span class="aui-iconfont aui-icon-discover"></span>
+            <p >发现</p>
+        </li>
+        <li onclick="changeToState('news', {id:2,sex:3},this)">
+            <span class="aui-iconfont aui-icon-community"></span>
+            <p >消息</p>
+        </li>
+        <li >
+            <span class="aui-iconfont aui-icon-people"></span>
+            <p >我</p>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
